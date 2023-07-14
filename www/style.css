@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ffca4d;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+main {
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+form > table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    font-size: 1.25em;
+}
+
+form sub {
+    color: #333;
+}
+
+form input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 20px;
+}
+
+#link {
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+

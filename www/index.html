@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Humanforce iCal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Humanforce to iCal</h1>
+
+        <p>
+            This service will create an iCal URL from your Humanforce roster.
+            This URL can then be provided to Google Calendar or other calendar software.
+        </p>
+        <p>
+            This service has been designed to <b>not store any credentials</b>. Your Humanforce credentials will be
+            encrypted, then embedded in the iCal link you are given. No user data of any kind is stored. If you ever
+            want to stop using the service, simply discard your link.
+        </p>
+
+        <form action="" method="post">
+            <table border="0">
+                <tbody>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" placeholder="me@example.com"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><hr></td>
+                </tr>
+                <tr>
+                    <td>Work Address</td>
+                    <td>
+                        <input type="text" name="location" placeholder="5 Streety St, Adelaide SA 5000">
+                        <sub><b>Optional.</b> This allows for Google Calendar to suggest when to leave.</sub>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Reminders</td>
+                    <td>
+                        Remind me
+                        <input type="number" name="reminderMins" value="60" min="0" max="1440" style="width:50px">
+                        minutes before my shift
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <input type="submit" value="Generate Link">
+        </form>
+    </main>
+</body>
+</html>
